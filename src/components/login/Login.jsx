@@ -1,9 +1,8 @@
 import { useState } from "react";
 import styles from "./Login.module.css";
-import { FaUser } from "react-icons/fa";
-import { FaLock } from "react-icons/fa";
+import { FaUser, FaLock } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { IoMdLogIn } from "react-icons/io"; // Make sure to import the IoMdLogIn icon
+import { IoMdLogIn } from "react-icons/io";
 import { BsPersonFillAdd } from "react-icons/bs";
 
 function Login({ theme }) {
@@ -24,7 +23,6 @@ function Login({ theme }) {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate a network request
     setTimeout(() => {
       setIsLoading(false);
       alert("Form submitted!");
